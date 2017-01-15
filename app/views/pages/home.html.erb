@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Homework</title>
-<style>
+  <title>Homework</title>
+  <style>
     h1 {
-        font-size: 40pt;
-        color: #730E15;
-        
-        text-align: center;
-    }    
+      font-size: 40pt;
+      color: #730E15;
+      text-align: center;
+    }
+
     body {
-        background-color: #F7F7F7;
-        width: 100%;
-        height: 100%;
-       
+      background-color: #F7F7F7;
+      width: 100%;
+      height: 100%;
+
     }
-    
+
     .container_left, .container_right {
-      position: block;
-        display: inline-block;
-        width: 49%;
-        height: 200px;
-        background-color: darkolivegreen;
-        border-style: solid;
-        text-align: center;
-    }  
+      position: relative;
+      display: inline-block;
+      width: 49%;
+      height: 200px;
+      background-color: darkolivegreen;
+      border-style: solid;
+      text-align: center;
+    }
+
     .header_img {
-        width:100%;
-        height: 546px;
+      width: 100%;
+      height: 546px;
     }
+
     img.center {
-        display: block;
-        margin: 0 auto;
+      display: block;
+      margin: 0 auto;
     }
-    footer { 
-        background-color: darkseagreen;
+
+    footer {
+      background-color: darkseagreen;
     }
+
     .center {
       text-align: center;
     }
-</style>
+  </style>
 </head>
 <body>
 <h1>This is Home</h1>
@@ -48,22 +52,25 @@
 </div>
 
 <div class="header_img">
-<%= image_tag("hellfire__028_by_redvampire120652-d7bcdzs.jpg", :class => "center" ) %>
-   
+  <%= image_tag("hellfire__028_by_redvampire120652-d7bcdzs.jpg", :class => "center") %>
+
 
 </div>
 <div class="container_left">
-   <h3>Sub Titulo</h3>
-    <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Delegadis gente finis, bibendum egestas augue arcu ut est. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Não sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
+  <h3>Sub Titulo</h3>
+  <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss deixa as pessoas mais interessantiss. Delegadis gente
+    finis, bibendum egestas augue arcu ut est. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Não sou
+    faixa preta cumpadi, sou preto inteiris, inteiris.</p>
 </div>
 <div class="container_right">
-      <h3>Sub Titulo</h3>
-    <p>Sapien in monti palavris qui num significa nadis i pareci latim.  Leite de capivaris, leite de mula manquis. Ta deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.” Interagi no mé, cursus quis, vehicula ac nisi</p>
+  <h3>Sub Titulo</h3>
+  <p>Sapien in monti palavris qui num significa nadis i pareci latim. Leite de capivaris, leite de mula manquis. Ta
+    deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.” Interagi no mé, cursus quis, vehicula ac nisi</p>
 </div>
 <footer>
   <p>Posted by: Marcelo Cavassani</p>
   <p>Contact information: <a href="mailto:someone@example.com">
-  someone@example.com</a>.</p>
+    someone@example.com</a>.</p>
 </footer>
 </body>
 </html>
