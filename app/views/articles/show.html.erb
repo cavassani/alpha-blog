@@ -1,7 +1,16 @@
-<h1> Mostrando o artigo selecionado</h1>
 
-<p> Title: <%= @article.title %></p>
-
-<p> Description: <%= @article.description %></p>
-<%= link_to 'Editar esse artigo', edit_article_path(@article) %> |
-<%= link_to "Voltando a lista de artigos", articles_path %>
+ <h2 align="center">Title: <%= @article.title %></h2>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h4 class="center description"><strong>Description:</strong></h4>
+  <hr>
+  <%= simple_format(@article.description) %>
+  <div class="article-actions">
+    <%= link_to 'Editar', edit_article_path(@article),
+     class: "btn btn-xs btn-primary" %>
+    <%= link_to "Deletar", article_path(@article),
+      method: :delete, data: { confirm: "tem certeza?"},
+      class: "btn btn-xs btn-danger" %>
+    <%= link_to "Todos artigos", articles_path,
+     class: "btn btn-xs btn-success"%>
+  </div>
+</div>
