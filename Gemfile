@@ -9,6 +9,9 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 
+# test controller
+gem 'rails-controller-testing'
+
 # bcrypt
 gem 'bcrypt', '~> 3.1.7'
 # paginacao
