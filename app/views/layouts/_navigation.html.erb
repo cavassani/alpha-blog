@@ -21,12 +21,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ações <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%= link_to 'Novo Artigo', new_article_path %></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><%= link_to "criar nova categoria", new_category_path %></li>
             </ul>
           </li>
         <% end %>
@@ -58,9 +53,8 @@
             <ul class="dropdown-menu">
               <li><%= link_to "Edite sua conta", edit_user_path(current_user) %></li>
               <li><%= link_to "veja seu profile", user_path(current_user) %></li>
-              <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><%= link_to 'Sair', logout_path, method: :delete %></li>
             </ul>
           </li>
         <% else %>
